@@ -39,6 +39,14 @@ CUDA_VISIBLE_DEVICES=0 --nproc_per_node=1 --master_port='29501' test.py \
 --input_structure_image /path/to/your/content/image \
 --input_texture_image /path/to/your/style/image
 ```
+If you want to utilize semantic masks to further refine the semantic correspondence, please add
+``` python
+--input_structure_mask /path/to/your/content/mask \
+--input_texture_mask /path/to/your/style/mask
+```
+after the testing command.
+In addition, you can also add the argument ```--auto_mask True``` to automatically generate portrait masks using [Segformer](https://huggingface.co/jonathandinu/face-parsing) during inference. 
+
 To perform style transfer between image folders, please set the ```dataroot``` and ```checkpoints_dir``` path in ```./experiments/CelebA_launcher.py```, and put the content image dir and style image dir in ```dataroot```, then run
 ``` python
 python -m experiments CelebA test swapping_grid
