@@ -302,7 +302,6 @@ class DGPSTModel(BaseModel):
         A1 = torch.softmax(A1,dim=-1)
         real_B_w = self.warp(real_B,A1,real_A)
         real_B_w_tensor = real_B_w.clone()
-        return real_B_w_tensor, real_B_w_tensor
     
         if self.opt.region_style:
             new_mask = mask[:,13:14] #hair
