@@ -25,7 +25,7 @@ If your network cannot access Hugging Face, please add
 ``` python
 HF_ENDPOINT=https://hf-mirror.com
 ```
-before the following training and testing commands.
+before the training and following testing commands.
 
 ## Testing
 To perform style transfer between two given images, you can put the pretrained model in ```./checkpoints/CelebA_default/`` and run 
