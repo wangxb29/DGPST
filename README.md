@@ -15,11 +15,12 @@ Download pretrained CLIP image encoder and IP-Adapter models from [here](https:/
 
 ## Training
 
-Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset. Run ```g_mask.py``` to aggregate the 19 categories and obtain a new mask folder. 
+Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset. Run ```g_mask.py``` to aggregate the 19 categories and obtain a new mask folder for CelebA. Please set the ```dataroot``` path as the CelebA image path and ```dataroot2``` path to the mask path in ```./experiments/CelebA_launcher.py```, and run
 
 ``` python
 python -m experiments CelebA train CelebA_default
 ```
+
 If your network cannot access Hugging Face, please add 
 ``` python
 HF_ENDPOINT=https://hf-mirror.com
