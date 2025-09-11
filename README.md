@@ -1,5 +1,5 @@
 # DG-PST: Domain Generalizable Portrait Style Transfer
-Official implementation of "Domain Generalizable Portrait Style Transfer" (Acceped to ICCV 2025)
+Official implementation of ["Domain Generalizable Portrait Style Transfer"](https://arxiv.org/pdf/2507.04243) (Acceped to ICCV 2025)
 
 
 ## Installation
