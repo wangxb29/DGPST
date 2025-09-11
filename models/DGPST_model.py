@@ -195,10 +195,10 @@ class DGPSTModel(BaseModel):
 
         _, LH, HL, HH = self.wav(real_B)
         control_B = torch.cat((LH,HL,HH),dim=1)
-        control_B = F.interpolate(control_B,scale_factor=2,mode='nearest')     
+        control_B = F.interpolate(control_B,scale_factor=2,mode='bilinear')     
         _, LH, HL, HH = self.wav(real_A)
         control_A = torch.cat((LH,HL,HH),dim=1)
-        control_A = F.interpolate(control_A,scale_factor=2,mode='nearest')
+        control_A = F.interpolate(control_A,scale_factor=2,mode='bilinear')
 
         with torch.no_grad():
             real_B_img = (real_B/2 + 0.5) * 255
