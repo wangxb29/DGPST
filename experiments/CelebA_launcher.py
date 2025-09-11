@@ -35,10 +35,10 @@ class Launcher(TmuxLauncher):
             opts.tag("swapping_grid").specify(
                 num_gpus=1,
                 batch_size=1,
-                dataroot="/home/xinbo/datasets/ICCV/ICCVsupplys",
-                dataname = "ICCVsupply-nocorr",
+                dataroot="/path/to/your/image/folders/",
+                dataname = "your experiment name",
                 dataset_mode="CelebAMask",
                 preprocess="scale_width",
-                evaluation_metrics="structure_style_1t1_generation"
+                evaluation_metrics="structure_style_grid_generation"
             ),
         ]
