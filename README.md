@@ -15,10 +15,6 @@ pip install -r requirements.txt
 Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset.
 
 ## Training
-Please set the ```dataroot``` path as your image path and ```dataroot2``` path to your mask path in ```./experiments/CelebA_launcher.py```, and run
-``` python
-python -m experiments CelebA train CelebAMaskHQ_default
-```
 
 ## Testing
 To perform style transfer between two given images, you can put the pretrained model in ```./checkpoints/CelebA_default/`` and run 
