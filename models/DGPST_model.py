@@ -179,7 +179,6 @@ class DGPSTModel(BaseModel):
         self.model.to(device)
         
         exclude_keys = ["ip_model.image_encoder", "loss_fn_alex"]  
-        # 创建过滤后的 state_dict
         self.filtered_state_dict = {
             k: v for k, v in self.state_dict().items() 
             if not any(ex in k for ex in exclude_keys)
