@@ -11,11 +11,16 @@ pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 --index-url https://dow
 pip install -r requirements.txt
 ```
 ## Model Downloading
-Download pretrained CLIP image encoder and IP-Adapter models from [here](https://huggingface.co/h94/IP-Adapter/tree/main) and put the ```models``` dir in ```./ip_adapter/```.
+Download pretrained CLIP image encoder and IP-Adapter models from [here](https://huggingface.co/h94/IP-Adapter/tree/main) and put the ```models``` folder in ```./ip_adapter/```.
 
 ## Training
 
 Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset.
+If your network cannot access Hugging Face, please add 
+``` python
+HF_ENDPOINT=https://hf-mirror.com
+```
+before the following training and testing commands.
 
 ## Testing
 To perform style transfer between two given images, you can put the pretrained model in ```./checkpoints/CelebA_default/`` and run 
