@@ -68,3 +68,5 @@ If you find our work helpful for your research, please consider citing our paper
   year={2025}
 }
 ```
+## Acknowledgement
+We thank the great work [swapping-autoencoder](https://github.com/taesungp/swapping-autoencoder-pytorch), [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) and [dift](https://github.com/Tsingularity/dift).
