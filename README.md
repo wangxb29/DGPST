@@ -23,6 +23,9 @@ Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ
 ``` python
 python -m experiments CelebA train CelebA_default
 ```
+To train the semantic adapter, please specify the parameter ```--training_stage``` in ```./models/DGPST_model/``` as 1.
+To train the ControlNet and style adapter, please set that as 2.
+
 
 If your network cannot access Hugging Face, please add 
 ``` python
