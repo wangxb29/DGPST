@@ -11,7 +11,7 @@ conda activate dgpst
 pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 ```
-## Model Downloading
+## Models Downloading
 Download pretrained CLIP image encoder and IP-Adapter models from [here](https://huggingface.co/h94/IP-Adapter/tree/main) and put the ```models``` folder in ```./ip_adapter/```.
 
 Download our pretrained models from [Google drive]().
