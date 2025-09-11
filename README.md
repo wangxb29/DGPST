@@ -46,7 +46,8 @@ If the result is not satisfactory, you can add the argument ```--auto_mask True`
 ```
 after the testing command.
 
-To perform style transfer between a folder of content images and a folder of style images, you can place both folders under the same parent directory and then specify the ```dataroot``` path in ```test_options``` of ```./experiments/CelebA_launcher.py``` as this parent folder, and run  
+To perform style transfer between a folder of content images and a folder of style images, you can place both folders under the same parent directory and then specify the ```dataroot``` path in ```test_options``` of ```./experiments/CelebA_launcher.py``` as this parent folder, and change the ```dataname``` as desired to set a name for this experiment. After that, run
+
 ``` python
 python -m experiments CelebA test swapping_grid
 ```
