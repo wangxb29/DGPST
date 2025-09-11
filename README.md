@@ -13,6 +13,7 @@ pip install -r requirements.txt
 ```
 ## Model Downloading
 Download pretrained CLIP image encoder and IP-Adapter models from [here](https://huggingface.co/h94/IP-Adapter/tree/main) and put the ```models``` folder in ```./ip_adapter/```.
+
 Download our pretrained models from [Google drive]().
 
 ## Training
