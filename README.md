@@ -15,7 +15,7 @@ Download pretrained CLIP image encoder and IP-Adapter models from [here](https:/
 
 ## Training
 
-Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset. 
+Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset. Run ```g_mask.py``` to aggregate the 19 categories. 
 If your network cannot access Hugging Face, please add 
 ``` python
 HF_ENDPOINT=https://hf-mirror.com
