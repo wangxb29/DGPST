@@ -11,10 +11,8 @@ pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 --index-url https://dow
 pip install -r requirements.txt
 ```
 
-## Set up dataset
-Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset.
-
 ## Training
+Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset.
 
 ## Testing
 To perform style transfer between two given images, you can put the pretrained model in ```./checkpoints/CelebA_default/`` and run 
