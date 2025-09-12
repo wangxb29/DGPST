@@ -16,7 +16,7 @@ class Launcher(TmuxLauncher):
 
         return [
             opt.specify(
-                name="CelebA_default",
+                name="CelebA_train",
                 model="DGPST",
                 optimizer="Diff",
             ),
@@ -35,6 +35,7 @@ class Launcher(TmuxLauncher):
             opts.tag("swapping_grid").specify(
                 num_gpus=1,
                 batch_size=1,
+                name="CelebA_default",
                 dataroot="/path/to/your/image/folders/",
                 dataname = "your experiment name",
                 dataset_mode="CelebAMask",
