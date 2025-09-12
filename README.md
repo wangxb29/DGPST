@@ -34,7 +34,7 @@ HF_ENDPOINT=https://hf-mirror.com
 before the training and following testing commands.
 
 ## Testing
-To perform style transfer between two given images, you can put the pretrained model in ```./checkpoints/CelebA_default/`` and run 
+To perform style transfer between two given images using the pretrained model in ```./checkpoints/CelebA_default/```, you can run 
 ``` python
 CUDA_VISIBLE_DEVICES=0 --nproc_per_node=1 --master_port='29501' test.py \ 
 --name CelebA_default \ 
