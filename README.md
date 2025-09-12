@@ -21,7 +21,7 @@ Download our pretrained models from [Google drive]().
 Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset. Run ```g_mask.py``` to aggregate the 19 categories and obtain a new mask folder for CelebA. Please set the ```dataroot``` path as the CelebA image path and ```dataroot2``` path to the mask path in ```./experiments/CelebA_launcher.py```, and run
 
 ``` python
-python -m experiments CelebA train CelebA_default
+python -m experiments CelebA train CelebA_train
 ```
 To train the semantic adapter, please specify the parameter ```--training_stage``` in ```./models/DGPST_model/``` as 1.
 To train the ControlNet and style adapter, please set that as 2.
