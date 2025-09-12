@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 Download pretrained CLIP image encoder and IP-Adapter models from [here](https://huggingface.co/h94/IP-Adapter/tree/main) and put the ```models``` folder in ```./ip_adapter/```.
 
-Download our pretrained models from [Google drive](https://drive.google.com/drive/folders/1Nj_0tKl-Y76cOnl1BsMqlIBYNlW10TDo?usp=drive_link).
+Download our pretrained models from [Google drive](https://drive.google.com/drive/folders/1Nj_0tKl-Y76cOnl1BsMqlIBYNlW10TDo?usp=drive_link) and put all the files in ```./checkpoints/CelebA_default```.
 
 ## Training
 
