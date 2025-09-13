@@ -142,8 +142,8 @@ class DGPSTModel(BaseModel):
         unet = MyUNet2DConditionModel.from_pretrained(
         "runwayml/stable-diffusion-v1-5", subfolder="unet"
         )
-        if os.path.exists("checkpoints/CelebA_diff69/diffusion_pytorch_model.safetensors"):
-            controlnet = ControlNetModel.from_pretrained("D:\projects\Diffswapping-4\checkpoints\CelebA_diff69")
+        if os.path.exists("checkpoints/CelebA_default/diffusion_pytorch_model.safetensors"):
+            controlnet = ControlNetModel.from_pretrained("checkpoints/CelebA_default")
         else:
             controlnet = ControlNetModel.from_unet(unet)
         pipe = DGPSTPipeline.from_pretrained(
