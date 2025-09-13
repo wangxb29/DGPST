@@ -105,8 +105,7 @@ class IPAdapter2(nn.Module):
         self.image_proj_model = self.init_proj3().train()
         self.image_proj_model2 = self.init_proj3().train()
 
-        # self.load_ip_adapter()
-        self.prompt = nn.Parameter(torch.rand(1, 77, 768), requires_grad=True).to(self.device)
+        self.load_ip_adapter()
         
     def init_proj(self):
         image_proj_model = ImageProjModel(
