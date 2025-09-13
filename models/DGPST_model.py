@@ -209,8 +209,8 @@ class DGPSTModel(BaseModel):
         if self.opt.training_stage==1:
             style_prompt_flag = torch.zeros((1,768,1,1),device=real.device).detach()
             uncond_style_prompt_flag = torch.zeros((1,768,1,1),device=real.device).detach()
-            fea_inputB, _ = self.ip_model.forward_corr(pil_image=real_B_img, up_ft_index=self.opt.up_ft_index, uncond_style_prompt_flag=uncond_style_prompt_flag, style_prompt_flag=style_prompt_flag, image=control_B, image_sd = real_B_img,  controlnet_conditioning_scale=0.9, num_samples=1, num_inference_steps=30, mask=None, seed=None)
-            fea_inputA, _ = self.ip_model.forward_corr(pil_image=real_A_img, up_ft_index=self.opt.up_ft_index, uncond_style_prompt_flag=uncond_style_prompt_flag, style_prompt_flag=style_prompt_flag, image=control_A, image_sd = real_A_img,  controlnet_conditioning_scale=0.9, num_samples=1, num_inference_steps=30, mask=None, seed=None)
+            fea_inputB = self.ip_model.forward_corr(pil_image=real_B_img, up_ft_index=self.opt.up_ft_index, uncond_style_prompt_flag=uncond_style_prompt_flag, style_prompt_flag=style_prompt_flag, image=control_B, image_sd = real_B_img,  controlnet_conditioning_scale=0.9, num_samples=1, num_inference_steps=30, mask=None, seed=None)
+            fea_inputA = self.ip_model.forward_corr(pil_image=real_A_img, up_ft_index=self.opt.up_ft_index, uncond_style_prompt_flag=uncond_style_prompt_flag, style_prompt_flag=style_prompt_flag, image=control_A, image_sd = real_A_img,  controlnet_conditioning_scale=0.9, num_samples=1, num_inference_steps=30, mask=None, seed=None)
             Q1 = fea_inputA.flatten(-2, -1).permute(0,2,1)
             K1 = fea_inputB.flatten(-2, -1)
             Q1 = Q1 - Q1.mean(dim=2,keepdim=True)
