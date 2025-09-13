@@ -6,9 +6,6 @@ from data.image_folder import make_dataset
 from PIL import Image
 import numpy as np
 import torch
-from util.MattingLaplacian import compute_laplacian
-
-#from skimage.color import rgb2lab, lab2rgb
 
 class CelebAMaskDataset(BaseDataset):
     def __init__(self, opt):
