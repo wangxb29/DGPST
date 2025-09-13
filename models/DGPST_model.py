@@ -391,7 +391,6 @@ class DGPSTModel(BaseModel):
         sympath = os.path.normpath(sympath)
         if os.path.exists(sympath):
             os.remove(sympath)        
-            print("remove!")
         savepath = os.path.normpath(savepath)
         os.symlink(savepath, sympath)
 
