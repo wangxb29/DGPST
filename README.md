@@ -16,6 +16,8 @@ Download pretrained CLIP image encoder and IP-Adapter models from [here](https:/
 
 Download our pretrained models from [Google drive](https://drive.google.com/drive/folders/1Nj_0tKl-Y76cOnl1BsMqlIBYNlW10TDo?usp=drive_link) and put all the files in ```./checkpoints/CelebA_default```.
 
+Additionally, we provide another pre-trained model that demonstrates stronger stylization effects [Google drive](https://drive.google.com/drive/folders/1Bn2Rthorw3noox5FCTykj7td5I5lbYr1?usp=drive_link).
+
 ## Training
 
 Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) dataset. Run ```g_mask.py``` to aggregate the 19 categories and obtain a new mask folder for CelebA. Please set the ```dataroot``` path as the CelebA image path and ```dataroot2``` path to the mask path in ```./experiments/CelebA_launcher.py```, and run
