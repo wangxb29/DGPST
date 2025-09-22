@@ -147,7 +147,7 @@ class DGPSTModel(BaseModel):
         else:
             controlnet = ControlNetModel.from_unet(unet, conditioning_channels=9)
         pipe = DGPSTPipeline.from_pretrained(
-            "runwayml/stable-diffusion-v1-5", controlnet=controlnet, unet=unet
+            "runwayml/stable-diffusion-v1-5", controlnet=controlnet, unet=unet, safety_checker=None
         )
         pipe.scheduler = MyDDIMScheduler.from_config(pipe.scheduler.config)
         config = RunConfig(model_type = Model_Type.SD15,
