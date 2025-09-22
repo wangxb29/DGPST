@@ -27,6 +27,7 @@ Please download [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ
 ``` python
 python -m experiments CelebA train CelebA_train
 ```
+For training, please replace ```CelebA_default``` in line 144 and 145 of ```./models/DGPST_model``` with ```CelebA_train```.
 To train the semantic adapter, please specify the parameter ```--training_stage``` in ```./models/DGPST_model/``` as 1.
 To train the ControlNet and style adapter, please set that as 2.
 
