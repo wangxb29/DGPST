@@ -57,7 +57,7 @@ If the result is not satisfactory, you can also add a argument ```--auto_mask Tr
 ```
 after the testing command.
 
-For different inputs, please try adjusting the ```controlnet_conditioning_scale``` parameter in line 329 of ```./models/DGPST_model.py```. Additionally, consider replacing ```pil_image=real_B_w``` with ```pil_image=real_B_img``` in this line to better transfer reference styles for ​​cross-domain style transfer​​ scenarios.
+For different inputs, please try adjusting the ```controlnet_conditioning_scale``` parameter in line 329 of ```./models/DGPST_model.py```. Additionally, consider replacing ```pil_image=real_B_w``` with ```pil_image=real_B_img``` in the same line to better transfer reference styles for ​​cross-domain style transfer​​ scenarios.
 
 To perform style transfer between a folder of content images and a folder of style images, you can place both folders under the same parent directory and then specify the ```dataroot``` path in ```test_options``` of ```./experiments/CelebA_launcher.py``` as this parent folder, and change the ```dataname``` as desired to set a name for this experiment. After that, run
 
