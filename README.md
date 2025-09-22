@@ -18,7 +18,7 @@ Download our pre-trained models from [Google drive](https://drive.google.com/dri
 
 Additionally, we provide another pre-trained model that demonstrates stronger stylization effects. Download it from this [link](https://drive.google.com/drive/folders/1Bn2Rthorw3noox5FCTykj7td5I5lbYr1?usp=drive_link).
 
-The dataset used in our paper include [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ), [AAHQ](https://github.com/onion-liu/aahq-dataset), [FS2K](https://github.com/AiArt-Gao/HIDA) and [APDrawing](https://github.com/yiranran/APDrawingGAN).
+The datasets used in our paper include [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ), [AAHQ](https://github.com/onion-liu/aahq-dataset), [FS2K](https://github.com/AiArt-Gao/HIDA) and [APDrawing](https://github.com/yiranran/APDrawingGAN).
 
 ## Training
 
